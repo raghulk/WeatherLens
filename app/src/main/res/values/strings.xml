@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">WeatherLens</string>
+    <string name="title_wallpapers">Wallpapers</string>
+    <string name="title_lens">Lens</string>
+    <string name="title_settings">Settings</string>
+    <string name="pressure">Pressure</string>
+    <string name="humidity">Humidity</string>
+    <string name="uv">UV</string>
+    <string name="fahrenheit">Fahrenheit</string>
+    <string name="metrics">Metrics: </string>
+    <string name="metric">Metric</string>
+    <string name="celsius">Celsius</string>
+    <string name="set_as_background">Set as Background</string>
+    <string name="imperial">Imperial</string>
+    <string name="native_advanced_ad_unit_id">ca-app-pub-5880201034258253/1150090361</string>
+<!--    ca-app-pub-3940256099942544/2247696110-->
+    <string name="ip_geolocation_apk_key">908b4e1183e242c9a9fa2a02129a3219</string>
+    <string name="ad_attribution">Ad</string>
+    <string name="latitude">Latitude</string>
+    <string name="longitude">Longitude</string>
+</resources>
