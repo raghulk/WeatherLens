@@ -3,4 +3,8 @@
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
     <dimen name="cardview_radius">8dp</dimen>
+    <dimen name="vertical_view_margin">16dp</dimen>
+    <dimen name="medium_text_size">16dp</dimen>
+    <dimen name="vertical_padding">2dp</dimen>
+    <dimen name="separator_height" format="float">0.3dp</dimen>
 </resources>

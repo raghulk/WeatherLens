@@ -7,7 +7,7 @@
     <string name="humidity">Humidity</string>
     <string name="uv">UV</string>
     <string name="fahrenheit">Fahrenheit</string>
-    <string name="metrics">Metrics: </string>
+    <string name="metrics">Metrics</string>
     <string name="metric">Metric</string>
     <string name="celsius">Celsius</string>
     <string name="set_as_background">Set as Background</string>
@@ -18,4 +18,5 @@
     <string name="ad_attribution">Ad</string>
     <string name="latitude">Latitude</string>
     <string name="longitude">Longitude</string>
+    <string name="onBoarding_done">onBoardingDone</string>
 </resources>

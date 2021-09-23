@@ -1,30 +1,84 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:layout_margin="8dp"
-    tools:context=".ui.settings.SettingsFragment">
+    xmlns:tools="http://schemas.android.com/tools">
 
-    <TextView
-        android:id="@+id/metrics_text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toTopOf="parent"
-        android:text="@string/metrics"
-        app:layout_constraintStart_toStartOf="parent" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="12dp"
+        tools:context=".ui.settings.SettingsFragment">
 
-    <ToggleButton
-        android:id="@+id/toggle_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textOff="@string/imperial"
-        android:textOn="@string/metric"
-        app:layout_constraintStart_toEndOf="@id/metrics_text"
-        app:layout_constraintTop_toTopOf="parent" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:id="@+id/metrics_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/metrics_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingVertical="@dimen/vertical_padding"
+                    android:text="@string/metrics"
+                    android:textSize="@dimen/medium_text_size"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ToggleButton
+                    android:id="@+id/toggle_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textOff="@string/imperial"
+                    android:textOn="@string/metric"
+                    app:layout_constraintStart_toEndOf="@id/metrics_text"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/separator_height"
+                android:layout_marginVertical="@dimen/vertical_view_margin"
+                android:background="@color/gray" />
+
+            <TextView
+                android:id="@+id/about_developer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableEnd="@drawable/arrow_forward"
+                android:drawableRight="@drawable/arrow_forward"
+                android:paddingVertical="@dimen/vertical_padding"
+                android:text="About Developer"
+                android:textSize="@dimen/medium_text_size"
+                android:textStyle="normal" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/separator_height"
+                android:layout_marginVertical="@dimen/vertical_view_margin"
+                android:background="@color/gray" />
+
+            <TextView
+                android:id="@+id/contribute_project"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableEnd="@drawable/arrow_forward"
+                android:drawableRight="@drawable/arrow_forward"
+                android:paddingVertical="@dimen/vertical_padding"
+                android:text="Contribute to Project"
+                android:textSize="@dimen/medium_text_size"
+                android:textStyle="normal" />
+        </LinearLayout>
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

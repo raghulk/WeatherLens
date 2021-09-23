@@ -21,11 +21,13 @@
             tools:listitem="@layout/lens_card_item" />
         <Button
             android:id="@+id/set_wallpaper"
-            android:layout_width="match_parent"
+            android:layout_width="250dp"
             android:layout_height="wrap_content"
             android:text="@string/set_as_background"
             android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
             app:layout_constraintTop_toBottomOf="@id/weather_cards_stack"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
             />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

@@ -76,6 +76,9 @@ dependencies {
     // AdMob
     implementation 'com.google.android.gms:play-services-ads:20.3.0'
 
+    // AndroidX Capable version
+    implementation 'com.github.AppIntro:AppIntro:6.1.0'
 
-
+    implementation 'com.google.android.gms:play-services-location:18.0.0'
+    implementation 'com.google.android.gms:play-services-maps:17.0.1'
 }
